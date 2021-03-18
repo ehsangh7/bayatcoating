@@ -1,8 +1,17 @@
-
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Permanent Marker", cursive;
+  @font-face {
+    font-family: irfarnaz;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/irfarnaz-webfont.woff");
+  }
+  
+}
+
+body{
+  background: linear-gradient(20deg, #1CA1E4, #0778B4);
 }

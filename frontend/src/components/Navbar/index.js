@@ -38,7 +38,7 @@ const Navbar = () => {
         <Nav active={scroll} click={click}>
           <NavbarContainer>
             <NavLogo to="/" onClick={closeMobileMenu}>
-              <NavIcon />
+              {/* <NavIcon /> */}
               EXPLOR
             </NavLogo>
             <MobileIcon onClick={handleClick}>

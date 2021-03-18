@@ -3,10 +3,10 @@ import { DiScala } from "react-icons/di"
 import styled from "styled-components"
 
 export const Nav = styled.nav`
-  background: ${({ active }) =>
+  /* background: ${({ active }) =>
     active
       ? "#fff"
-      : "linear-gradient(to bottom,  rgba(255,255,255, 0.9) 0%,rgba(255,255,255,0) 100%)"};
+      : "linear-gradient(to bottom,  rgba(255,255,255, 0.9) 0%,rgba(255,255,255,0) 100%)"}; */
   height: 80px;
   display: flex;
   justify-content: center;

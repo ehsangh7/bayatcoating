@@ -8,14 +8,16 @@ import {
 } from "react-icons/fa"
 import {
   FooterContainer,
-  SocialIcon,
+  
   SocialIconLink,
   SocialIcons,
   SocialLogo,
   SocialMedia,
   SocialMediaWrap,
   WebsiteRights,
+  Logo,
 } from "./FooterElements"
+import logo from '../../images/Logo33.svg'
 
 const Footer = () => {
   return (
@@ -23,8 +25,8 @@ const Footer = () => {
       <SocialMedia>
         <SocialMediaWrap>
           <SocialLogo to="/">
-            <SocialIcon />
-            EXPLOR
+            <Logo src={logo}/>
+            Bayat Coating
           </SocialLogo>
           <WebsiteRights>EXPLOR © {new Date().getFullYear()}</WebsiteRights>
           <SocialIcons>

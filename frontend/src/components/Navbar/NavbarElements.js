@@ -1,12 +1,11 @@
 import { Link } from "gatsby"
-import { DiScala } from "react-icons/di"
+
 import styled from "styled-components"
+import {Colors} from "../Color"
+
 
 export const Nav = styled.nav`
-  background: ${({ active }) =>
-    active
-      ? "#fff"
-      : "linear-gradient(to bottom,  rgba(255,255,255, 0.9) 0%,rgba(255,255,255,0) 100%)"};
+  background: ${Colors['gray']};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -16,7 +15,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 999;
   @media screen and (max-width: 960px) {
-    background: ${({ click }) => (click ? "#fff" : "transparent")};
+    background: ${Colors['gray']};
     transition: 0.8s all ease;
   }
 `
@@ -28,20 +27,26 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 1000px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  
 `
 
 export const NavLogo = styled(Link)`
-  color: #141414;
+  color: #fff;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+  
 `
 
-export const NavIcon = styled(DiScala)`
-  margin: 0 0.5rem 0 2rem;
+export const Logo = styled.img`
+  width: 150px;
+  margin-top: 25px;
 `
 
 export const MobileIcon = styled.div`
@@ -72,7 +77,7 @@ export const NavMenu = styled.ul`
     top: ${({ click }) => (click ? "100%" : "-1000px")};
     opacity: 1;
     transition: all 0.2s ease;
-    background: #fff;
+    background: ${Colors['gray']};
   }
 `
 
@@ -88,16 +93,23 @@ export const NavLinks = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-family: 'irfarnaz';
+  font-size: 25px;
   padding: 0.5rem 1rem;
   height: 100%;
-  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  &:hover{
+    color: ${Colors['orange']};
+    border-bottom: 5px solid ${Colors['orange']};
+    
+  }
   @media screen and (max-width: 960px) {
     text-align: center;
     padding: 2rem;
     width: 100%;
     display: table;
     &:hover {
-      color: #ff4040;
+      color:  ${Colors['blue']};
       transition: all 0.3s ease;
     }
   }

@@ -1,10 +1,13 @@
 .image-container {
     text-align: center;
-    margin: 150px 0;
+    margin: 80px 0;
+    
   }
   
   .image-container h1 {
     margin-bottom: 64px;
+    font-family: 'irfarnaz';
+    color: #DDDDDC;
   }
   
   .image-grid {

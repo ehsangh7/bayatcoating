@@ -9,7 +9,7 @@ const Image = () => {
       allFile(
         filter: {
           extension: { regex: "/(jpg)|(png)|(jpeg)/" }
-          name: { nin: ["background", "background2"] }
+          name: { nin: ["background", "background2", "gatsby-icon"] }
         }
       ) {
         edges {
@@ -28,7 +28,7 @@ const Image = () => {
 
   return (
     <div className="image-container">
-      <h1>View our Destinations</h1>
+      {/* <h1>خدمات ما</h1> */}
       <div className="image-grid">
         {data.allFile.edges.map((image, key) => (
           <Img

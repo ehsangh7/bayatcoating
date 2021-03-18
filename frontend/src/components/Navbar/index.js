@@ -5,12 +5,15 @@ import {
   MobileIcon,
   Nav,
   NavbarContainer,
-  NavIcon,
   NavItem,
   NavLinks,
   NavLogo,
   NavMenu,
+  Logo,
 } from "./NavbarElements"
+import logo from '../../images/Logo33.svg'
+
+
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
@@ -38,22 +41,22 @@ const Navbar = () => {
         <Nav active={scroll} click={click}>
           <NavbarContainer>
             <NavLogo to="/" onClick={closeMobileMenu}>
-              <NavIcon />
-              EXPLOR
+              <Logo src={logo}/>
+              
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/">Home</NavLinks>
+                <NavLinks to="/">صفحه اصلی</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/images">Images</NavLinks>
+                <NavLinks to="/images">خدمات</NavLinks>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks to="/destinations">Destinations</NavLinks>
-              </NavItem>
+              </NavItem> */}
             </NavMenu>
           </NavbarContainer>
         </Nav>

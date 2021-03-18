@@ -1,9 +1,10 @@
 import { Link } from "gatsby"
-import { DiScala } from "react-icons/di"
+
 import styled from "styled-components"
+import {Colors} from "../Color"
 
 export const FooterContainer = styled.div`
-  background-color: #101522;
+  background-color: ${Colors['gray']};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,11 +37,16 @@ export const SocialLogo = styled(Link)`
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  &:hover{
+    color:${Colors['orange']}
+  }
+`
+export const Logo = styled.img`
+  width: 150px;
+  margin-top: 25px;
 `
 
-export const SocialIcon = styled(DiScala)`
-  margin-right: 10px;
-`
+
 
 export const WebsiteRights = styled.small`
   color: #fff;
@@ -58,4 +64,7 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+  &:hover{
+    color:${Colors['orange']}
+  }
 `

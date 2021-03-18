@@ -109,7 +109,7 @@ export const NavLinks = styled(Link)`
     width: 100%;
     display: table;
     &:hover {
-      color:  ${Colors['blue']};
+      color:  ${Colors['orange']};
       transition: all 0.3s ease;
     }
   }

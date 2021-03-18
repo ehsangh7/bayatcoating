@@ -12,6 +12,7 @@ import {
   Logo,
 } from "./NavbarElements"
 import logo from '../../images/Logo33.svg'
+import {Colors} from "../Color"
 
 
 
@@ -37,7 +38,7 @@ const Navbar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#141414" }}>
+      <IconContext.Provider value={{ color: Colors['milky'] }}>
         <Nav active={scroll} click={click}>
           <NavbarContainer>
             <NavLogo to="/" onClick={closeMobileMenu}>

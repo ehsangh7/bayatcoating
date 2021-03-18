@@ -5,7 +5,7 @@ import {
   MobileIcon,
   Nav,
   NavbarContainer,
-  // NavIcon,
+  NavIcon,
   NavItem,
   NavLinks,
   NavLogo,
